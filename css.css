@@ -1,0 +1,203 @@
+*{
+    margin: 00px;
+    padding: 5px;
+}
+
+h1{
+    font-family:fantasy
+    font-size: 40px;
+    font-style: bold;
+    color:midnightblue;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-style: italic;
+    text-align: justify;
+}
+    
+body{
+    color: white;
+    text-shadow: rgb(133, 133, 238);
+    background-image: url(img/wallpaper2.jpg);
+    background-attachment: fixed;
+
+}
+
+.justifie{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align:justify;
+}
+
+.fractal{
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.fractal:hover{
+    opacity: 0.7;
+}
+
+
+.footer{
+    text-align: left;
+}
+
+
+
+
+
+
+/* HOVER */
+
+.hover-rotate {
+    overflow: hidden;
+    margin: 100px;
+    min-width: 240px;
+    max-width: 900px;
+    width: 100%;
+    object-position: center;
+    text-align:right;
+}
+  
+.hover-rotate img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+  
+.hover-rotate:hover img {
+    transform: scale(1.3) rotate(90deg);
+}
+
+
+
+
+
+
+
+/* DISPLAY */
+
+.imgcentered{
+    text-align: center;
+}
+  
+.divTest{
+display: flex;
+justify-content: space-around;
+flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+/* mediaQuery */
+
+
+@media (max-width: 600px) {
+    .desktop {
+      display: none;
+    }
+    .mediaquery2 {
+      display: none;
+    }
+    .titre2table {
+        display: none;
+    }
+    .mobile {
+      display: inline;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 1000px) {
+    .mobile {
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .yellowblock {
+      background-color: yellow;
+    }
+    .mobile {
+        display: none;
+    }
+  }
+
+
+     
+
+
+
+
+
+
+/* ANIMATION */
+
+.Animation{
+    height: 600px;
+    background-image: url(img/zelda.jpg);    
+    background-size: cover;    
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+
+
+@keyframes translateAnimation {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, 100px); }
+    50% { transform: translate(200px, 200px); }    
+    75% { transform: translate(100px, 100px); }
+    90% {transform: translate(300px, 300px); }
+    100% { transform: translate(0, 0); }
+}
+
+.anim {
+    animation: translateAnimation 10s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Button */
+
+
+button:hover{
+    background-color: rgb(16, 149, 194);
+    transition: background-color 0.5s;
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button-container button{
+     margin: 10px;
+     width: 150px;  
+     height: 50px;
+     
+}
+
+button{
+    border-radius: 20px;
+}
